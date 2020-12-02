@@ -31,7 +31,9 @@ export default {
         gray: '#8f8f8f',
         darkGray: '#2e2f42',
         red: '#ff5f5f',
-        rose: '#f062c0'
+        redHover: '#e35565',
+        rose: '#f062c0',
+        roseHover: '#d958a6'
     },
     spacings: {
         xxsmall: '0.8rem',

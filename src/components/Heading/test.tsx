@@ -45,11 +45,11 @@ describe('<Heading />', () => {
 
     it('shouder render a heading with a small size - Footer', () => {
         renderWithTheme(<Heading size="small">Footer Title</Heading>)
-        expect(screen.getByRole('heading', { name: /footer title/i })).toHaveStyle(
-            {
-                'font-size': '1.6rem'
-            }
-        )
+        expect(
+            screen.getByRole('heading', { name: /footer title/i })
+        ).toHaveStyle({
+            'font-size': '1.6rem'
+        })
         expect(
             screen.getByRole('heading', { name: /footer title/i })
         ).toHaveStyleRule('width', '3rem', {
@@ -58,23 +58,37 @@ describe('<Heading />', () => {
     })
 
     it('shouder render a heading with a line color primary', () => {
-        renderWithTheme(<Heading lineColor="primary" lineLeft lineBottom>Won Games</Heading>)
-        
+        renderWithTheme(
+            <Heading lineColor="primary" lineLeft lineBottom>
+                Won Games
+            </Heading>
+        )
+
         const heading = screen.getByRole('heading', { name: /won games/i })
-        expect(heading).toHaveStyle({'border-left': '0.7rem solid #f231a5'})
-        expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #f231a5', {
-            modifier: '::after'
-        })
+        expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #f231a5' })
+        expect(heading).toHaveStyleRule(
+            'border-bottom',
+            '0.5rem solid #f231a5',
+            {
+                modifier: '::after'
+            }
+        )
     })
     it('shouder render a heading with a line color secondary', () => {
-        renderWithTheme(<Heading lineColor="secondary" lineLeft lineBottom>Won Games</Heading>)
-        
+        renderWithTheme(
+            <Heading lineColor="secondary" lineLeft lineBottom>
+                Won Games
+            </Heading>
+        )
+
         const heading = screen.getByRole('heading', { name: /won games/i })
-        expect(heading).toHaveStyle({'border-left': '0.7rem solid #3cd3c1'})
-        expect(heading).toHaveStyleRule('border-bottom', '0.5rem solid #3cd3c1', {
-            modifier: '::after'
-        })
+        expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #3cd3c1' })
+        expect(heading).toHaveStyleRule(
+            'border-bottom',
+            '0.5rem solid #3cd3c1',
+            {
+                modifier: '::after'
+            }
+        )
     })
-
-
 })
