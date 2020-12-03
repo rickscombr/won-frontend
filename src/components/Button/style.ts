@@ -56,8 +56,8 @@ export const Wrapper = styled.button<WrapperProps>`
         &:hover {
             background: linear-gradient(
                 180deg,
-                ${theme.colors.redHover} 0%,
-                ${theme.colors.roseHover} 50%
+                ${theme.colors.darkRed} 0%,
+                ${theme.colors.darkRose} 50%
             );
         }
 

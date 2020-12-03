@@ -23,7 +23,9 @@ export default {
     },
     colors: {
         primary: '#f231a5',
+        darkPrimary: '#b20b6f',
         secondary: '#3cd3c1',
+        darkSecondary: '#3cd3c1',
         mainBG: '#06092B',
         white: '#fafafa',
         black: '#030517',
@@ -31,9 +33,9 @@ export default {
         gray: '#8f8f8f',
         darkGray: '#2e2f42',
         red: '#ff5f5f',
-        redHover: '#e35565',
+        darkRed: '#e35565',
         rose: '#f062c0',
-        roseHover: '#d958a6'
+        darkRose: '#d958a6'
     },
     spacings: {
         xxsmall: '0.8rem',
