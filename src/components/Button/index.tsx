@@ -1,7 +1,9 @@
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
 import * as S from './style'
 
-type ButtomTypes = AnchorHTMLAttributes<HTMLButtonElement> | ButtonHTMLAttributes<HTMLButtonElement>
+type ButtomTypes =
+    | AnchorHTMLAttributes<HTMLButtonElement>
+    | ButtonHTMLAttributes<HTMLButtonElement>
 
 export type ButtonProps = {
     size?: 'small' | 'medium' | 'large'

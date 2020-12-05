@@ -18,24 +18,24 @@ export default {
         buttonLink: '/games/defy-death'
     },
     parameters: {
-        layout: "fullscreen"
+        layout: 'fullscreen'
     }
 } as Meta
 
-export const Default: Story<BannerProps> = ( args ) => (
+export const Default: Story<BannerProps> = (args) => (
     <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
-        <Banner { ...args } />
+        <Banner {...args} />
     </div>
 )
 
-export const withRibbon: Story<BannerProps> = ( args ) => (
+export const withRibbon: Story<BannerProps> = (args) => (
     <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
-        <Banner { ...args } />
+        <Banner {...args} />
     </div>
 )
 
 withRibbon.args = {
-    ribbon: '30% off', 
+    ribbon: '30% off',
     ribbonSize: 'normal',
     ribbonColor: 'primary'
 }

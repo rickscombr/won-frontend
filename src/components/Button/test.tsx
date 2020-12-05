@@ -50,10 +50,17 @@ describe('<Button />', () => {
         // exibir o componente na tela
         // const { debug, container} = renderWithTheme(<Button as="a" href="/link">Buy now</Button>)
         // debug(container)
-        
+
         // NÃO exibir o componente na tela
-        renderWithTheme(<Button as="a" href="/link">Buy now</Button>)
-        
-        expect(screen.getByRole('link', { name: /buy now/i })).toHaveAttribute('href', '/link')
+        renderWithTheme(
+            <Button as="a" href="/link">
+                Buy now
+            </Button>
+        )
+
+        expect(screen.getByRole('link', { name: /buy now/i })).toHaveAttribute(
+            'href',
+            '/link'
+        )
     })
 })

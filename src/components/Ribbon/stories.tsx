@@ -15,13 +15,15 @@ export default {
     }
 } as Meta
 
-export const Default: Story<RibbonProps> = ( args ) => (
-    <div style={{
-        width: '40rem',
-        height: '25rem',
-        position: 'relative',
-        backgroundColor: '#a1a1a1'
-    }}>
-        <Ribbon { ...args } />
+export const Default: Story<RibbonProps> = (args) => (
+    <div
+        style={{
+            width: '40rem',
+            height: '25rem',
+            position: 'relative',
+            backgroundColor: '#a1a1a1'
+        }}
+    >
+        <Ribbon {...args} />
     </div>
 )

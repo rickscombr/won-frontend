@@ -11,7 +11,7 @@ const wrapperModifiers = {
             border-top-color: ${darken(0.2, theme.colors[color])};
         }
     `,
-    
+
     normal: (theme: DefaultTheme) => css`
         font-size: ${theme.font.sizes.small};
         padding: 0 ${theme.spacings.small};
@@ -23,7 +23,7 @@ const wrapperModifiers = {
             border-right-width: 2rem;
         }
     `,
-    
+
     small: (theme: DefaultTheme) => css`
         font-size: ${theme.font.sizes.xsmall};
         padding: 0 ${theme.spacings.xsmall};
