@@ -4,11 +4,8 @@ import { renderWithTheme } from 'utils/tests/helpers'
 import Heading from '.'
 
 describe('<Heading />', () => {
-    it('shouder render a write heading by default', () => {
-        //renderiza o componente
+    it('should render a white heading by default', () => {
         renderWithTheme(<Heading>Won Games</Heading>)
-
-        // Verificar o texto de acessibilidade e a cor default
         expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle(
             {
                 color: '#fafafa'
@@ -16,7 +13,7 @@ describe('<Heading />', () => {
         )
     })
 
-    it('shouder render a black heading when a color is passed', () => {
+    it('should render a black heading when color is passed', () => {
         renderWithTheme(<Heading color="black">Won Games</Heading>)
         expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle(
             {
@@ -25,7 +22,7 @@ describe('<Heading />', () => {
         )
     })
 
-    it('shouder render a heading with a left border', () => {
+    it('should render a heading with a line to the left side', () => {
         renderWithTheme(<Heading lineLeft>Won Games</Heading>)
         expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle(
             {
@@ -34,7 +31,7 @@ describe('<Heading />', () => {
         )
     })
 
-    it('shouder render a heading with a bottom border', () => {
+    it('should render a heading with a line at the bottom', () => {
         renderWithTheme(<Heading lineBottom>Won Games</Heading>)
         expect(
             screen.getByRole('heading', { name: /won games/i })
@@ -43,28 +40,39 @@ describe('<Heading />', () => {
         })
     })
 
-    it('shouder render a heading with a small size - Footer', () => {
-        renderWithTheme(<Heading size="small">Footer Title</Heading>)
+    it('should render a heading with a small size', () => {
+        renderWithTheme(<Heading size="small">Won Games</Heading>)
+        expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle(
+            {
+                'font-size': '1.6rem'
+            }
+        )
+
         expect(
-            screen.getByRole('heading', { name: /footer title/i })
-        ).toHaveStyle({
-            'font-size': '1.6rem'
-        })
-        expect(
-            screen.getByRole('heading', { name: /footer title/i })
+            screen.getByRole('heading', { name: /won games/i })
         ).toHaveStyleRule('width', '3rem', {
             modifier: '::after'
         })
     })
 
-    it('shouder render a heading with a line color primary', () => {
+    it('should render a heading with a huge size', () => {
+        renderWithTheme(<Heading size="huge">Won Games</Heading>)
+
+        expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle(
+            {
+                'font-size': '5.2rem'
+            }
+        )
+    })
+
+    it('should render a Heading with a primary line color', () => {
         renderWithTheme(
             <Heading lineColor="primary" lineLeft lineBottom>
-                Won Games
+                Lorem Ipsum
             </Heading>
         )
 
-        const heading = screen.getByRole('heading', { name: /won games/i })
+        const heading = screen.getByRole('heading', { name: /lorem ipsum/i })
         expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #f231a5' })
         expect(heading).toHaveStyleRule(
             'border-bottom',
@@ -74,14 +82,15 @@ describe('<Heading />', () => {
             }
         )
     })
-    it('shouder render a heading with a line color secondary', () => {
+
+    it('should render a Heading with a secondary line color', () => {
         renderWithTheme(
             <Heading lineColor="secondary" lineLeft lineBottom>
-                Won Games
+                Lorem Ipsum
             </Heading>
         )
 
-        const heading = screen.getByRole('heading', { name: /won games/i })
+        const heading = screen.getByRole('heading', { name: /lorem ipsum/i })
         expect(heading).toHaveStyle({ 'border-left': '0.7rem solid #3cd3c1' })
         expect(heading).toHaveStyleRule(
             'border-bottom',

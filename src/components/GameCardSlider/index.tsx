@@ -1,5 +1,5 @@
-import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined'
-import ArrowForwardIosOutlinedIcon from '@material-ui/icons/ArrowForwardIosOutlined'
+import ArrowRight from '@material-ui/icons/ArrowBackIosOutlined'
+import ArrowLeft from '@material-ui/icons/ArrowForwardIosOutlined'
 import Slider, { SliderSettings } from 'components/Slider'
 import GameCard, { GameCardProps } from 'components/GameCard'
 
@@ -40,8 +40,8 @@ const settings: SliderSettings = {
             }
         }
     ],
-    nextArrow: <ArrowForwardIosOutlinedIcon aria-label="next games" />,
-    prevArrow: <ArrowBackIosOutlinedIcon aria-label="previous games" />
+    nextArrow: <ArrowRight aria-label="next games" />,
+    prevArrow: <ArrowLeft aria-label="previous games" />
 }
 
 export type GameCardSliderProps = {

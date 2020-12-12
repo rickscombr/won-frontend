@@ -1,7 +1,7 @@
 import { AddShoppingCart, Favorite, FavoriteBorder } from '@material-ui/icons'
 
-import Button from 'components/Button'
 import Ribbon, { RibbonColors, RibbonSizes } from 'components/Ribbon'
+import Button from 'components/Button'
 import * as S from './style'
 
 export type GameCardProps = {

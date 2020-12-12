@@ -24,10 +24,6 @@ export const IconWrapper = styled.div`
         cursor: pointer;
         width: 2.4rem;
         height: 2.4rem;
-        > svg {
-            width: 100%;
-            height: 100%;
-        }
     `}
 `
 
@@ -92,7 +88,8 @@ export const MenuFull = styled.nav<MenuFullProps>`
         flex-direction: column;
         justify-content: space-between;
         background: ${theme.colors.white};
-        position: absolute;
+        position: fixed;
+        z-index: ${theme.layers.menu};
         top: 0;
         bottom: 0;
         left: 0;

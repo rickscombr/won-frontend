@@ -8,7 +8,7 @@ export default {
     },
     font: {
         family:
-            "Raleway, -appe-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
+            "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
         light: 300,
         normal: 400,
         bold: 600,
@@ -17,22 +17,22 @@ export default {
             small: '1.4rem',
             medium: '1.6rem',
             large: '1.8rem',
-            xlarge: '2rem',
-            xxlarge: '2.2rem'
+            xlarge: '2.0rem',
+            xxlarge: '2.8rem',
+            huge: '5.2rem'
         }
     },
     colors: {
         primary: '#f231a5',
-        darkPrimary: '#b20b6f',
         secondary: '#3cd3c1',
-        darkSecondary: '#3cd3c1',
-        mainBG: '#06092B',
+        mainBg: '#06092b',
+        lightBg: '#f2f2f2',
         white: '#fafafa',
         black: '#030517',
         lightGray: '#eaeaea',
         gray: '#8f8f8f',
         darkGray: '#2e2f42',
-        red: '#ff5f5f',
+        red: '#ff6347',
         darkRed: '#e35565',
         rose: '#f062c0',
         darkRose: '#d958a6'
@@ -42,7 +42,7 @@ export default {
         xsmall: '1.6rem',
         small: '2.4rem',
         medium: '3.2rem',
-        large: '4rem',
+        large: '4.0rem',
         xlarge: '4.8rem',
         xxlarge: '5.6rem'
     },
@@ -52,5 +52,9 @@ export default {
         overlay: 30,
         modal: 40,
         alwaysOnTop: 50
+    },
+    transition: {
+        default: '0.3s ease-in-out',
+        fast: '0.1s ease-in-out'
     }
-}
+} as const
