@@ -4,16 +4,15 @@ import { Email } from '@styled-icons/material-outlined'
 import TextField, { TextFieldProps } from '.'
 
 export default {
-    title: 'TextField',
+    title: 'Form/TextField',
     component: TextField,
     args: {
         label: 'E-mail',
-        labelFor: 'Email',
+        name: 'email',
         icon: <Email />,
-        id: 'Email',
         initialValue: '',
         placeholder: 'john.cage@gmail.com',
-        iconPosition: 'left'
+        disabled: false
     },
     argTypes: {
         onInput: { action: 'changed' },
@@ -23,6 +22,16 @@ export default {
 
 export const Default: Story<TextFieldProps> = (args) => (
     <div style={{ maxWidth: 300, padding: 15 }}>
-        <TextField {...args} />
+        <TextField {...args} iconPosition="left" />
     </div>
 )
+
+export const withError: Story<TextFieldProps> = (args) => (
+    <div style={{ maxWidth: 300, padding: 15 }}>
+        <TextField {...args} iconPosition="right" />
+    </div>
+)
+
+withError.args = {
+    error: 'Ops...something is wrong'
+}
