@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import MenuOutlinedIcon from '@material-ui/icons/MenuOutlined'
-import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined'
-import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined'
-import CloseOutlinedIcon from '@material-ui/icons/CloseOutlined'
+
+import { Menu2 as MenuIcon } from '@styled-icons/remix-fill/Menu2'
+import { ShoppingCart as ShoppingCartIcon } from '@styled-icons/material-outlined/ShoppingCart'
+import { Search as SearchIcon } from '@styled-icons/material-outlined/Search'
+import { Close as CloseIcon } from '@styled-icons/material-outlined/Close'
 
 import Button from 'components/Button'
 import Logo from 'components/Logo'
@@ -20,7 +21,7 @@ const Menu = ({ username }: MenuProps) => {
         <S.Wrapper>
             <MediaMatch lessThan="medium">
                 <S.IconWrapper onClick={() => setIsOpen(true)}>
-                    <MenuOutlinedIcon aria-label="Open Menu" />
+                    <MenuIcon aria-label="Open Menu" />
                 </S.IconWrapper>
             </MediaMatch>
 
@@ -37,10 +38,10 @@ const Menu = ({ username }: MenuProps) => {
 
             <S.MenuGroup>
                 <S.IconWrapper>
-                    <SearchOutlinedIcon aria-label="Search" />
+                    <SearchIcon aria-label="Search" />
                 </S.IconWrapper>
                 <S.IconWrapper>
-                    <ShoppingCartOutlinedIcon aria-label="Open Shopping Cart" />
+                    <ShoppingCartIcon aria-label="Open Shopping Cart" />
                 </S.IconWrapper>
                 {!username && (
                     <MediaMatch greaterThan="medium">
@@ -50,7 +51,7 @@ const Menu = ({ username }: MenuProps) => {
             </S.MenuGroup>
 
             <S.MenuFull aria-hidden={!isOpen} isOpen={isOpen}>
-                <CloseOutlinedIcon
+                <CloseIcon
                     aria-label="Close Menu"
                     onClick={() => setIsOpen(false)}
                 />
