@@ -13,7 +13,7 @@ export const parameters = {
             },
             {
                 name: 'won-dark',
-                value: theme.colors.mainBG
+                value: theme.colors.mainBg
             }
         ]
     }

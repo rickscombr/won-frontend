@@ -1,5 +1,5 @@
-import ArrowRight from '@material-ui/icons/ArrowBackIosOutlined'
-import ArrowLeft from '@material-ui/icons/ArrowForwardIosOutlined'
+import ArrowLeft from '@material-ui/icons/ArrowBackIosOutlined'
+import ArrowRight from '@material-ui/icons/ArrowForwardIosOutlined'
 import Slider, { SliderSettings } from 'components/Slider'
 import GameCard, { GameCardProps } from 'components/GameCard'
 
