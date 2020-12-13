@@ -4,6 +4,16 @@ import { renderWithTheme } from 'utils/tests/helpers'
 import Logo from '.'
 
 describe('<Logo />', () => {
+    it('shouder render the logo with id', () => {
+        //renderiza o componente
+        const { container } = renderWithTheme(<Logo id="lgWon" />)
+
+        // Verificar o texto de acessibilidade e a cor default
+        expect(
+            container.querySelector('#paint_linear_lgWon')
+        ).toBeInTheDocument()
+    })
+
     it('shouder render a write label by default', () => {
         //renderiza o componente
         renderWithTheme(<Logo />)
