@@ -48,6 +48,11 @@ export const BannerContent = styled.div`
         grid-template-columns: 1fr;
         justify-content: space-between;
         height: 100%;
+
+        a {
+            width: fit-content;
+            height: fit-content;
+        }
     `}
 `
 
@@ -93,6 +98,11 @@ export const ContentWrapper = styled.div`
         }
         ${HeadingStyle.Wrapper} {
             margin-bottom: ${theme.spacings.medium};
+        }
+
+        a {
+            width: fit-content;
+            height: fit-content;
         }
     `}
 `
