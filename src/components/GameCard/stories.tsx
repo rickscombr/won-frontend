@@ -12,7 +12,7 @@ export default {
     args: {
         title: 'Population Zero',
         developer: 'Rockstar Games',
-        img: '/img/games/population-zero_616x353.jpg',
+        img: '/img/games/PopulationZero.png',
         price: 'R$ 235,00',
         promotionalPrice: 'R$ 200,00'
     }

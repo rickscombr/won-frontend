@@ -2,42 +2,42 @@ export default [
     {
         title: 'Population Zero',
         developer: 'Rockstar Games',
-        img: 'https://source.unsplash.com/user/willianjusten/300x140',
+        img: '/img/games/PopulationZero.png',
         price: 'R$ 235,00',
         promotionalPrice: 'R$ 215,00'
     },
     {
-        title: 'Population Zero',
+        title: 'Borderlands 3',
         developer: 'Rockstar Games',
-        img: 'https://source.unsplash.com/user/willianjusten/300x141',
+        img: '/img/games/Borderlands3.png',
         price: 'R$ 235,00',
         promotionalPrice: 'R$ 215,00'
     },
     {
-        title: 'Population Zero',
+        title: 'Resident Evil 3',
         developer: 'Rockstar Games',
-        img: 'https://source.unsplash.com/user/willianjusten/300x142',
+        img: '/img/games/ResidentEvil3.png',
         price: 'R$ 235,00',
         promotionalPrice: 'R$ 215,00'
     },
     {
-        title: 'Population Zero',
+        title: 'Red Dead 2',
         developer: 'Rockstar Games',
-        img: 'https://source.unsplash.com/user/willianjusten/300x143',
+        img: '/img/games/ReadDead2.png',
         price: 'R$ 235,00',
         promotionalPrice: 'R$ 215,00'
     },
     {
-        title: 'Population Zero',
+        title: 'Remnant',
         developer: 'Rockstar Games',
-        img: 'https://source.unsplash.com/user/willianjusten/300x144',
+        img: '/img/games/Remnant.png',
         price: 'R$ 235,00',
         promotionalPrice: 'R$ 215,00'
     },
     {
-        title: 'Population Zero',
+        title: 'Cyber Punk',
         developer: 'Rockstar Games',
-        img: 'https://source.unsplash.com/user/willianjusten/300x145',
+        img: '/img/games/cyberpunk.jpg',
         price: 'R$ 235,00',
         promotionalPrice: 'R$ 215,00'
     }
