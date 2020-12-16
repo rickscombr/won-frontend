@@ -5,4 +5,4 @@ module.exports = withPWA({
         dest: 'public',
         disable: !isProd
     }
-});
+})
