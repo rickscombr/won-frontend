@@ -54,6 +54,17 @@ describe('<GameDetails />', () => {
         expect(screen.getByText('Nov 21, 2020')).toBeInTheDocument()
     })
 
+    it('shouder render the Publisher', () => {
+        renderWithTheme(<GameDetails {...props} />)
+
+        expect(screen.getByText(/walkabout/i)).toBeInTheDocument()
+    })
+    it('shouder render the Developer', () => {
+        renderWithTheme(<GameDetails {...props} />)
+
+        expect(screen.getByText(/different tales/i)).toBeInTheDocument()
+    })
+
     it('shouder render the Rating when BR0 (Free)', () => {
         renderWithTheme(<GameDetails {...props} />)
 
