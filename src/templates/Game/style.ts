@@ -53,17 +53,6 @@ export const SectionGallery = styled(Section)`
     `}
 `
 
-export const SectionGameDetails = styled(Section)`
-    ${({ theme }) => css`
-        > div {
-            padding-bottom: ${theme.spacings.xlarge};
-            border-bottom: 0.1rem solid rgba(181, 181, 181, 0.3);
-
-            ${media.greaterThan('medium')`
-                padding-bottom: clac(${theme.spacings.xxlarge} * 2);
-            `}
-        }
-    `}
-`
+export const SectionGameDetails = styled(Section)``
 
 export const SectionGameText = styled(Section)``
