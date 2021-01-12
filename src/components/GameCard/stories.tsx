@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/react/types-6-0'
 import GameCard, { GameCardProps } from '.'
 
 export default {
-    title: 'Components/GameCard',
+    title: 'Games/GameCard',
     component: GameCard,
     argTypes: {
         onFav: { action: 'clicked' },

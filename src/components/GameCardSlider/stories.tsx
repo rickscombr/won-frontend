@@ -5,7 +5,7 @@ import GameCardSlider from '.'
 import items from './mock'
 
 export default {
-    title: 'Components/GameCardSlider',
+    title: 'Games/GameCardSlider',
     component: GameCardSlider,
     args: { items },
     parameters: {
