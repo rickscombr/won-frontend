@@ -12,6 +12,7 @@ export const InputWrapper = styled.div`
         align-items: center;
         background: ${theme.colors.lightGray};
         border-radius: 0.2rem;
+        margin-top: 0.5rem;
         padding: 0 ${theme.spacings.xsmall};
         border: 0.2rem solid;
         border-color: ${theme.colors.lightGray};
@@ -23,16 +24,15 @@ export const InputWrapper = styled.div`
 
 export const Input = styled.input<IconPositionProps>`
     ${({ theme, iconPosition }) => css`
-    color: ${theme.colors.black};
-    font-family: ${theme.font.family};
-    font-size: ${theme.font.sizes.medium};
-    padding: ${theme.spacings.xxsmall} 0;
-    padding-${iconPosition}: ${theme.spacings.xsmall};
-    background: transparent;
-    border: 0;
-    outline: none;
-    width: ${iconPosition === 'right' ? `calc(100% - 2.2rem)` : `100%`};
-  `}
+        color: ${theme.colors.black};
+        font-family: ${theme.font.family};
+        font-size: ${theme.font.sizes.medium};
+        padding: ${theme.spacings.xxsmall} 0;
+        background: transparent;
+        border: 0;
+        outline: none;
+        width: ${iconPosition === 'right' ? `calc(100% - 2.2rem)` : `100%`};
+    `}
 `
 
 export const Label = styled.label`
@@ -50,6 +50,9 @@ export const Icon = styled.div<IconPositionProps>`
         order: ${iconPosition === 'right' ? 1 : 0};
         & > svg {
             width: 2.2rem;
+            ${iconPosition === 'right'
+                ? `margin-left: ${theme.spacings.xsmall};`
+                : `margin-right: ${theme.spacings.xsmall};`}
         }
     `}
 `
