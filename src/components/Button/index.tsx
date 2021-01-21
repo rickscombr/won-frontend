@@ -1,7 +1,7 @@
 import { forwardRef, AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react'
 import * as S from './style'
 
-type ButtomTypes =
+type ButtonTypes =
     | AnchorHTMLAttributes<HTMLButtonElement>
     | ButtonHTMLAttributes<HTMLButtonElement>
 
@@ -11,7 +11,7 @@ export type ButtonProps = {
     minimal?: boolean
     icon?: JSX.Element
     as?: React.ElementType
-} & ButtomTypes
+} & ButtonTypes
 
 const Button: React.ForwardRefRenderFunction<S.WrapperProps, ButtonProps> = (
     {
